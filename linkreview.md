@@ -13,4 +13,4 @@
 | How Hard Can It Prompt? Adventures in Cross-model Prompt Transferability | 2024 | Lola Solovyeva | [scientific data](https://essay.utwente.nl/103206/1/Solovyeva_MA_EEMCS.pdf) | [GitHub]() | TODO |
 | Dynamic Prompting: A Unified Framework for Prompt Tuning | 2023 | Xianjun Yang | [scientific data](https://arxiv.org/pdf/2303.02909) | [GitHub](https://interactive-maml.github.io/maml.html) | [Simple explaination](https://interactive-maml.github.io/maml.html) TODO |
 | Automatic Prompt Optimization with “Gradient Descent” and Beam Search | 2023 | R Pryzant, D Iter | [scientific data](https://aclanthology.org/2023.emnlp-main.494.pdf) | [GitHub]() | TODO |
-| DIFFERENTIABLE PROMPT MAKES PRE-TRAINED LANGUAGE MODELS BETTER FEW-SHOT LEARNERS | 2022 | Ningyu Zhang Luoqiu Li | [scientific data](https://arxiv.org/pdf/2108.13161) | [GitHub]() | TODO |
+| Differentiable Prompt Makes Pre-trained Language Models Better Few-shot Learners | 2022 | Ningyu Zhang Luoqiu Li | [scientific data](https://arxiv.org/pdf/2108.13161) | [GitHub]() | TODO |
