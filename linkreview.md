@@ -80,6 +80,8 @@ Here we have collected info about all the works that may be useful for writing o
 | Title | Year | Authors | Paper | Supplemenntary | Summary |
 | :--- | ---: | :--- | :--- | :--- | :--- |
 | LLM-Informed Discrete Prompt Optimization | 2024 | Zeeshan Memon | [paper](https://openreview.net/pdf?id=d0jQuZe6k0) | [Presentation](https://www.youtube.com/watch?v=MuRa3tlyzq8) | Это работа является ключевой для нашего исследование. В ней авторы разбивают обучение prompt'ов на 2 части: первая часть общая для всех LLM, в ней подразумевается наличие датасета с простыми prompt'ами и улучшенными, чтобы легкий Backbone затюнился лучше сэмплировать хорошие подсказки. Вторая часть обучения проводится для каждой LLM отдельно, в ней MLP и HEAD дообучаются для конкретной LLM для генерации ключевых слов. Авторы утверждают, что у каждой LLM есть набор ключевых слов, использование которых может существенно улучшить prompt'ы и, соответственно, ответы LLM. |
+| UPRISE: Universal Prompt Retrieval for Improving Zero-Shot Evaluation | 2023 | Daixuan Cheng Shaohan Huang | [paper](https://arxiv.org/abs/2303.08518) | [Github]( https://github.com/microsoft/LMOps) |  |
+| Learning to Transfer Prompts for Text Generation | 2022 | Junyi Li, Tianyi Tang, Jian-Yun Nie | [paper](https://arxiv.org/abs/2205.01543) | - |  |
 
 ---
 
