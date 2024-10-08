@@ -1,6 +1,6 @@
 # LinkReview
 
-- Here we have collect info about all the works that may be useful for writing our paper
+Here we have collected info about all the works that may be useful for writing our paper.
 
 > [!NOTE]
 > Although we tried to make this version the final one, some changes will still be happening.
