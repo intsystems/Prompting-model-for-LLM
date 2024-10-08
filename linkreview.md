@@ -20,11 +20,15 @@ Here we have collected info about all the works that may be useful for writing o
 
 
 ### Soft + RL
+| Title | Year | Authors | Paper | Supplemenntary | Summary |
+| :--- | ---: | :--- | :--- | :--- | :--- |
 | RLPROMPT: Optimizing Discrete Text Prompts with Reinforcement Learning | 2022 | Mingkai Deng | [paper](https://arxiv.org/pdf/2205.12548) | [GitHub](https://github.com/mingkaid/rl-prompt) | Предлагают использовать RL для дискретных промптов, в качестве награды используют z-score. Сэмплируют батч промптов для входа x, считают награду для них, потом считают z-score, вышло хуже чем тюнить, но лучше чем остальные подходы и плюс к этому почти без вычислительных ресурсов. |
 | TEMPERA: Test-Time Prompting via Reinforcement Learning | 2022 | Xianjun Yang, Wei Cheng, Xujiang Zhao | [paper](https://arxiv.org/abs/2211.11890) | [Github](https://github.com/tianjunz/TEMPERA) | Утверждают, что побили RLPromt и AutoPromt |
 
 
 ### Soft -> Hard prompts
+| Title | Year | Authors | Paper | Supplemenntary | Summary |
+| :--- | ---: | :--- | :--- | :--- | :--- |
 | Soft prompting might be a bug, not a feature | 2023 | Luke Bailey | [paper](https://openreview.net/forum?id=MHWDdMEJ5s#all) | - | Потенциальная уязвимость soft prompts. Почему лучше работать с hard prompt. |
 | Prompt Waywardness: The Curious Case of Discretized Interpretation of Continuous Prompts | 2022 | Daniel Khashabi, Xinxi Lyu, Sewon Min, Lianhui Qin, Kyle Richardson, Sean Welleck, Hannaneh Hajishirzi, Tushar Khot, Ashish Sabharwal, Sameer Singh, Yejin Choi | [paper](https://aclanthology.org/2022.naacl-main.266/) | - | Recent work has shown the surprising power of continuous prompts to language models for controlled generation and for solving a wide range of tasks. Despite these successes, the resulting continuous prompts are not easy to interpret. Authors investigate the Prompt Waywardness hypothesis, a surprising disconnect between the intended behavior of continuous prompts and their nearest-neighbor discrete (language) representations. In particular, it is showen that one can find continuous prompts that perform a desired task while, at the same time, project to any given target text. This indicates the problem of little correspondence between continuous prompts and their discrete interpretation. A single discrete prompt can correspond to only one continuous prompt through its embedding, while the reverse does not hold. |
 
