@@ -17,7 +17,7 @@ Here we have collected info about all the works that may be useful for writing o
 | The Power of Scale for Parameter-Efficient Prompt Tuning | 2021 | Katherine Lee, Orhan Firat, Ashish Agarwal, Clara Fannjiang, David Sussillo | [paper](https://arxiv.org/abs/2104.08691) | [Github](https://github.com/google-research/text-to-text-transfer-transformer/blob/main/released_checkpoints.md#lm-adapted-t511lm100k) | Классическая статья по soft prompting'у. Описывается подход, показывается его эффективность, многие дальнейшие работы основываются на ней. |
 | Learning How to Ask: Querying LMs with Mixtures of Soft Prompts | 2021 | Guanghui Qin, Jason Eisner | [paper](https://arxiv.org/abs/2104.06599) | [Github](https://github.com/hiaoxui/soft-prompts) | Для каждой задачи оптимизируется смесь подсказок, чтобы определить наиболее эффективные. Результаты показывают, что этот подход значительно превосходит предыдущие методы, демонстрируя, что имплицитные фактические знания в языковых моделях ранее недооценивались. При этом знания можно эффективно извлекать даже при случайной инициализации подсказок. |
 
-
+---
 
 ### Soft + RL
 | Title | Year | Authors | Paper | Supplemenntary | Summary |
@@ -25,12 +25,15 @@ Here we have collected info about all the works that may be useful for writing o
 | RLPROMPT: Optimizing Discrete Text Prompts with Reinforcement Learning | 2022 | Mingkai Deng | [paper](https://arxiv.org/pdf/2205.12548) | [GitHub](https://github.com/mingkaid/rl-prompt) | Предлагают использовать RL для дискретных промптов, в качестве награды используют z-score. Сэмплируют батч промптов для входа x, считают награду для них, потом считают z-score, вышло хуже чем тюнить, но лучше чем остальные подходы и плюс к этому почти без вычислительных ресурсов. |
 | TEMPERA: Test-Time Prompting via Reinforcement Learning | 2022 | Xianjun Yang, Wei Cheng, Xujiang Zhao | [paper](https://arxiv.org/abs/2211.11890) | [Github](https://github.com/tianjunz/TEMPERA) | Утверждают, что побили RLPromt и AutoPromt |
 
+---
 
 ### Soft -> Hard prompts
 | Title | Year | Authors | Paper | Supplemenntary | Summary |
 | :--- | ---: | :--- | :--- | :--- | :--- |
 | Soft prompting might be a bug, not a feature | 2023 | Luke Bailey | [paper](https://openreview.net/forum?id=MHWDdMEJ5s#all) | - | Потенциальная уязвимость soft prompts. Почему лучше работать с hard prompt. |
 | Prompt Waywardness: The Curious Case of Discretized Interpretation of Continuous Prompts | 2022 | Daniel Khashabi, Xinxi Lyu, Sewon Min, Lianhui Qin, Kyle Richardson, Sean Welleck, Hannaneh Hajishirzi, Tushar Khot, Ashish Sabharwal, Sameer Singh, Yejin Choi | [paper](https://aclanthology.org/2022.naacl-main.266/) | - | Recent work has shown the surprising power of continuous prompts to language models for controlled generation and for solving a wide range of tasks. Despite these successes, the resulting continuous prompts are not easy to interpret. Authors investigate the Prompt Waywardness hypothesis, a surprising disconnect between the intended behavior of continuous prompts and their nearest-neighbor discrete (language) representations. In particular, it is showen that one can find continuous prompts that perform a desired task while, at the same time, project to any given target text. This indicates the problem of little correspondence between continuous prompts and their discrete interpretation. A single discrete prompt can correspond to only one continuous prompt through its embedding, while the reverse does not hold. |
+
+---
 
 ### Hard Prompting
 | Title | Year | Authors | Paper | Supplemenntary | Summary |
@@ -40,7 +43,7 @@ Here we have collected info about all the works that may be useful for writing o
 | Automatic Prompt Optimization with “Gradient Descent” and Beam Search | 2023 | R Pryzant, D Iter | [paper](https://aclanthology.org/2023.emnlp-main.494.pdf) | - | Статья предлагает динамическую оптимизацию промптов в многошаговом процессе, используя градиентный спуск и beam search. Авторы разработали собственный непараметрический алгоритм, объединяющий эти два подхода, что позволяет эффективно оптимизировать содержание и длину входного промпта. Таким образом, предлагаемый метод dynamic prompting дает более гибкие возможности для адаптации языковой модели к конкретной задаче по сравнению с традиционным soft prompting. |
 | Improving Text Embeddings with Large Language Models | 2024 | Liang Wang, Nan Yang, Xiaolong Huang, Linjun Yang, Rangan Majumder | [paper](https://arxiv.org/pdf/2401.00368) | - | Приведены ресурсы для датасетов и моделей. В самой статье объединяются подходы оптимизации промпта и PEFT, то есть fine-tuning'а моделей. |
 
-
+---
 
 ### Hallucinations
 | Title | Year | Authors | Paper | Supplemenntary | Summary |
@@ -51,6 +54,7 @@ Here we have collected info about all the works that may be useful for writing o
 | Sources of Hallucination by Large Language Models on Inference Tasks | 2023 | Nick McKenna, Tianyi Li, Liang Cheng, Mohammad Javad Hosseini, Mark Johnson, Mark Steedman | [paper](https://arxiv.org/abs/2305.14552) | [Github](https://github.com/Teddy-Li/LLM-NLI-Analysis) | Работа исследует способности больших языковых моделей (LLMs) к задаче "естественного языкового вывода" (NLI), важной для многих прикладных задач. Авторы проводят контролируемые эксперименты с различными LLM (LLaMA, GPT-3.5, PaLM) и выявляют два основных источника галлюцинаций в генеративных моделях: 1) Модели склонны ложно определять гипотезы как следующие из посылок, если гипотезы встречались в данных обучения, независимо от содержания посылок. 2) Модели также демонстрируют предвзятость, если предикат гипотезы более распространен в данных обучения, чем предикат посылки. Авторы показывают, что LLM значительно хуже справляются с тестовыми примерами NLI, не соответствующими этим систематическим смещениям, и предлагают их в качестве ценного контроля для будущей оценки LLM. |
 | Hallucinations in Neural Machine Translation | 2019 | Katherine Lee, Orhan Firat, Ashish Agarwal, Clara Fannjiang, David Sussillo | [paper](https://openreview.net/forum?id=SkxJ-309FQ) | [Github](https://github.com/tensorflow/nmt) | Работа изучает проблему "галлюцинаций" в нейронных системах машинного перевода (NMT), когда они генерируют совершенно отвязанные от исходного текста переводы. Авторы описывают метод генерирования таких галлюцинаций и показывают, что они возникают во многих вариациях NMT-архитектур. Исследованы подходы для уменьшения частоты галлюцинаций, в том числе аугментация данных, которая значительно снижает их частоту. Проведен анализ сетей, порождающих галлюцинации, выявлен характерный "почерк" в матрицах внимания и скрытых состояниях декодера. |
 
+---
 
 ### Model-Agnostic Meta-Learning
 | Title | Year | Authors | Paper | Supplemenntary | Summary |
@@ -59,6 +63,7 @@ Here we have collected info about all the works that may be useful for writing o
 | Probabilistic Model-Agnostic Meta-Learning | 2018 | Chelsea Finn, Kelvin Xu, Sergey Levine | [paper](https://arxiv.org/pdf/2303.02909) | - | Предлагается метод метаобучения для решения задачи обучения на небольшом количестве данных. Вместо одной модели, обучается распределение моделей, что позволяет учитывать неоднозначность данных. Метод основан на MAML и использует вариационный подход. Результаты показывают, что подход позволяет генерировать правдоподобные классификаторы и регрессоры для неоднозначных задач. |
 | How to train your MAML | 2019 | Antreas Antoniou, Harri Edwards, Amos Storkey | [paper](https://www.research.ed.ac.uk/en/publications/how-to-train-your-maml) | - | В статье изучаются подходы по улучшению классического maml. |
 
+---
 
 ### Dataset
 | Title | Year | Authors | Paper | Supplemenntary | Summary |
@@ -69,14 +74,14 @@ Here we have collected info about all the works that may be useful for writing o
 | DART: Open-Domain Structured Data Record to Text Generation | 2019 | Linyong Nan, Dragomir Radev, Rui Zhang | [paper](https://arxiv.org/pdf/2007.02871) | [Github](https://github.com/Yale-LILY/dart) | Генерация промптов-триплетов из текста |
 | GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding | 2018 | Alex Wang, Amanpreet Singh, Julian Michael | [paper](https://aclanthology.org/W18-5446.pdf) | - | На GLUE все любят сравнивать, как хорошо выходят оптимальные промпты (еще есть SuperGlue |
 
-
+---
 
 ### Unified Prompts
 | Title | Year | Authors | Paper | Supplemenntary | Summary |
 | :--- | ---: | :--- | :--- | :--- | :--- |
 | LLM-Informed Discrete Prompt Optimization | 2024 | Zeeshan Memon | [paper](https://openreview.net/pdf?id=d0jQuZe6k0) | [Presentation](https://www.youtube.com/watch?v=MuRa3tlyzq8) | Это работа является ключевой для нашего исследование. В ней авторы разбивают обучение prompt'ов на 2 части: первая часть общая для всех LLM, в ней подразумевается наличие датасета с простыми prompt'ами и улучшенными, чтобы легкий Backbone затюнился лучше сэмплировать хорошие подсказки. Вторая часть обучения проводится для каждой LLM отдельно, в ней MLP и HEAD дообучаются для конкретной LLM для генерации ключевых слов. Авторы утверждают, что у каждой LLM есть набор ключевых слов, использование которых может существенно улучшить prompt'ы и, соответственно, ответы LLM. |
 
-
+---
 
 
 
