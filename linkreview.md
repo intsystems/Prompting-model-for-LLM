@@ -36,6 +36,7 @@ Here we have collected info about all the works that may be useful for writing o
 | GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding | 2018 | Alex Wang, Amanpreet Singh, Julian Michael | [paper](https://aclanthology.org/W18-5446.pdf) | - | На GLUE все любят сравнивать, как хорошо выходят оптимальные промпты (еще есть SuperGlue |
 | Improving Text Embeddings with Large Language Models | 2024 | Liang Wang, Nan Yang, Xiaolong Huang, Linjun Yang, Rangan Majumder | [paper](https://arxiv.org/pdf/2401.00368) | - | Приведены ресурсы для датасетов и моделей. В самой статье объединяются подходы оптимизации промпта и PEFT, то есть fine-tuning'а моделей. |
 | LARGE LANGUAGE MODELS ARE HUMAN-LEVEL PROMPT ENGINEERS | 2024 | Yongchao Zhou, Andrei Ioan Muresanu, Ziwen Han | [paper](https://arxiv.org/pdf/2211.01910) | [Github](https://github.com/keirp/automatic_prompt_engineer) | Проведен анализ способностей LLM генерировать промпты, показано, что такой подход хороший. |
+| Learning How to Ask: Querying LMs with Mixtures of Soft Prompts | 2021 | Guanghui Qin, Jason Eisner | [paper](https://arxiv.org/abs/2104.06599) | [Github](https://github.com/hiaoxui/soft-prompts) | Для каждой задачи оптимизируется смесь подсказок, чтобы определить наиболее эффективные. Результаты показывают, что этот подход значительно превосходит предыдущие методы, демонстрируя, что имплицитные фактические знания в языковых моделях ранее недооценивались. При этом знания можно эффективно извлекать даже при случайной инициализации подсказок. |
 
 
 
