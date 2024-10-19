@@ -16,7 +16,7 @@ Here we have collected our experiments with dataset generation.
 > [!NOTE]
 > Mistal не разрешает обращаться к нему чаще 1 раза в секунду (мне пришлось поставить time.sleep(5), при меньшем значении падает). Плюс есть ограничение на число токенов в день и месяц (500 000  и 1 000 000 000). Их можно отслеживать в La Plateforme -> Usage / Limits.
 
-Ноутбук с генерацией и моим промптом для более менее адекватных ответов: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1w171xsVrK5yiPPmXFUuosp0Zbmph-9oH?usp=sharing)
+Ноутбук с генерацией и моим промптом для более менее адекватных ответов: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1I-jj2riyarklCB1Bg_COto9EcQRtPbRX?usp=sharing)
 Иногда Mistral генерит ответ на промпт вместе с улучшенным промптом. Иногда он генерит слишком длинный улучшенный промпт, поэтому я попросила его не делать так (не всегда помогает). Хотя возможно на запросы по написанию каких-то программ стоит оставить длинные оптимизированные промпты. Плюс я заметила, что в датасете для модели не используется I (только you, т.е. "Сделай", "Напиши" и т.д).
 Иногда появляются вводные слова типа "Enhanced prompt:", "Rewritten Prompt:", "Enhance the prompt:" (хотя промпт улучшенный). Их придётся пока вручную чистить.
 Ещё Mistral любит добавить эпитетов от себя.
