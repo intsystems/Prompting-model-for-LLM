@@ -21,7 +21,8 @@ Here we have collected our experiments with dataset generation.
 Иногда появляются вводные слова типа "Enhanced prompt:", "Rewritten Prompt:", "Enhance the prompt:" (хотя промпт улучшенный). Их придётся пока вручную чистить.
 Ещё Mistral любит добавить эпитетов от себя.
 
-Подобные эксперименты были проведены с моделью gpt-4o от open ai. gpt-4o обладает великолепными обобщающими способностями, поэтому при просьбах генерации, если не упоминать, что инструкция должна быть короткая, то она генерирует детальный план по шагам, который по сути уже почти является решением поставленной задачи, поэтому в инструкции были добавлены слова о том, что инструкции должны быть простые и не слишком длинные.
+### Open Ai, gpt-4o
+Подобные эксперименты были проведены с моделью gpt-4o от open ai. gpt-4o обладает великолепными обобщающими способностями, поэтому при просьбах генерации, если не упоминать, что инструкция должна быть короткая, то она генерирует детальный план по шагам, который по сути уже почти является решением поставленной задачи, поэтому в инструкции были добавлены слова о том, что инструкции должны быть простые и не слишком длинные. Ноутбук с генерацией промптов с помощью gpt-4o-mini [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1bxfI3a-jtnWyS4z9KyY08H261fqB1XST?usp=sharing)
 
 Пример инструкции, если просить выдать лучший промпт, не ставя ограничения на его длину и сложность:
 Create a Python program that performs the following tasks: Takes three numerical inputs from the user, representing the lengths of the sides of a triangle. Validates that the inputs form a valid triangle using the triangle inequality theorem. If the inputs are valid, calculates the area of the triangle using Heron's formula. Outputs the area of the triangle with an appropriate message. Heron's formula for the area (A) of a triangle with side lengths (a), (b), and (c) is: $[ s = \frac{a + b + c}{2} ] [ A = \sqrt{s(s - a)(s - b)(s - c)} ] $. Ensure the program includes appropriate error handling for invalid inputs (e.g., non-numeric values or values that do not form a valid triangle). 
@@ -30,7 +31,8 @@ Create a Python program that performs the following tasks: Takes three numerical
 Please write a Python program that calculates the area of a triangle. The program should prompt the user to input the lengths of the triangle's base and height, and then it should compute and display the area using the Heron's formula. Ensure the program includes error handling for invalid inputs and provides clear instructions to the user.
 
 
-В таблице ниже приведены примеры генерации по обеим стратегиям, несложно догадаться где какая, но при генерации датасета были использованы ограничения на длину и сложность промпта.
+В таблице ниже приведены примеры генерации. 
+
 
 Пример генерации:
 
