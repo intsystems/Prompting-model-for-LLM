@@ -54,10 +54,26 @@ Please write a Python program that calculates the area of a triangle. The progra
 ### AutoPromt Optimizer
 По всей видимости, статья [Automatic Prompt Optimization with "Gradient Descent" and Beam Search](https://arxiv.org/abs/2305.03495) - передовой край нашей науки по созданию универсальных помптов. Для оптимизации промптов авторы используют алгоритм "Prompt Optimization with Textual Gradients" (ProTeGi): формируются «градиенты» естественного языка, которые критикуют текущую подсказку (указывают в направлении возрастания ошибки).
 
-Этот алгоритм реализован в фреймворке: [AutoPromt](https://github.com/Eladlev/AutoPrompt?tab=readme-ov-file).
+Этот алгоритм реализован во фреймворке: [AutoPromt](https://github.com/Eladlev/AutoPrompt?tab=readme-ov-file).
 
 > [!NOTE]
 > Чтобы воспользоваться фреймворком необходимо иметь OpenAI API key. Но аккаунт на [OpenAI](https://openai.com/index/openai-api/) нельзя зарегистрировать на российский номер телефона.
+
+### Black-Box Prompt Optimization (BPO)
+Дугая интересная статья о создании оптимальных универсальных промптов: [Black-Box Prompt Optimization: Aligning Large Language Models without Model Training](https://arxiv.org/abs/2311.04155). Модель BPO пытается "подогнать" промпт под предпочтения человека, тем самым создавая оптимальные промпты. А именно, модель обучается на триплетах $(X_{user}, Y_{good}, Y_{bad})$, где $X_{user}$ - промпт созданный человеком, $Y_{good}$ - хороший ответ на запрос с точки зрения человека, $Y_{good}$ - плохой ответ на запрос с точки зрения человека; на выход модель выдает $X_{opt}$ - оптимальную версию помпта.
+
+Этот алгоритм реализован во фреймворке: [BPO](https://github.com/thu-coai/BPO/tree/main).
+
+Авторы самостоятельно сгенерировали датасет из 14,395 оптимальных промптов на основании своего алгоритма: [ready-made dataset]
+(https://huggingface.co/datasets/THUDM/BPO).
+
+> [!NOTE]
+> Чтобы воспользоваться фреймворком необходимо иметь OpenAI API key. Но аккаунт на [OpenAI](https://openai.com/index/openai-api/) нельзя зарегистрировать на российский номер телефона.
+
+
+
+
+
 
 
 ---
