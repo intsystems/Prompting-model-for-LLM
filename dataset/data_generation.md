@@ -77,7 +77,15 @@ Please write a Python program that calculates the area of a triangle. The progra
 | provide a title for a blog article about the difference between branding, rebranding, brand updates and brand refresh | Provide a more engaging and creative title for a blog article that explains the difference between branding, rebranding, brand updates, and brand refresh while maintaining accuracy. |
 | How should I do to produce an ssh tunnel going through multiple hosts in python please ? | How can I create an SSH tunnel through multiple hosts in Python using the Paramiko library? Please provide step-by-step instructions and any additional tips for customization or troubleshooting. |
 
+### Random Sampling Separators for Prompt Optimisation
+Другой подход к поиску универсальных оптимальных промптов - научимся выбирать "хорошие" сепараторы для промпта. Неожиданно оказывается, что случайно выборанные из словаря токены в качестве «разделителей» могут быть очень эффективны. Случайные сепараторы работают лучше, чем сепараторы созданные человеком. Подробности в статье: [Strings from the Library of Babel: Random Sampling as a Strong Baseline for Prompt Optimisation](https://arxiv.org/abs/2311.09569).
 
+Алгоитм подбора оптимальных сепараторов реализован во фреймворке: [random_prompt](https://github.com/yaolu/random-prompt/tree/main).
+
+Код для запуска: [quick_start_code](https://www.kaggle.com/code/akshiira/random-sampling).
+
+> [!NOTE]
+> Код подбирает именно оптимальные сепараторы, но сгенерировать "оптимальные" промпты используя уже найденные разелители не так сложно.
 
 
 
