@@ -52,7 +52,7 @@ Please write a Python program that calculates the area of a triangle. The progra
 > Исходный код не доступен. Можно использовать для ручной генерации небольшого датасета.
 
 ### AutoPromt Optimizer
-По всей видимости, передовой край нашей науки по созданию универсальных помптов освящен в статье: [Automatic Prompt Optimization with "Gradient Descent" and Beam Search](https://arxiv.org/abs/2305.03495). Авторы используют алгоритм Prompt Optimization with Textual Gradients (ProTeGi): формируются «градиенты» естественного языка, которые критикуют текущую подсказку (указывают в направлении возрастания ошибки).
+По всей видимости, статья [Automatic Prompt Optimization with "Gradient Descent" and Beam Search](https://arxiv.org/abs/2305.03495) - передовой край нашей науки по созданию универсальных помптов. Авторы используют алгоритм Prompt Optimization with Textual Gradients (ProTeGi): формируются «градиенты» естественного языка, которые критикуют текущую подсказку (указывают в направлении возрастания ошибки).
 
 Этот алгоритм реализован в фреймворке: [AutoPromt](https://github.com/Eladlev/AutoPrompt?tab=readme-ov-file).
 
