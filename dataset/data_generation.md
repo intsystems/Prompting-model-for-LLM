@@ -85,7 +85,7 @@ Please write a Python program that calculates the area of a triangle. The progra
 Код для запуска: [quick_start_code](https://www.kaggle.com/code/akshiira/random-sampling).
 
 > [!NOTE]
-> Код подбирает именно оптимальные сепараторы, но сгенерировать "оптимальные" промпты используя уже найденные разелители не так сложно.
+> Код подбирает именно оптимальные сепараторы, но сгенерировать "оптимальные" промпты используя уже найденные разделители не так сложно.
 
 
 
