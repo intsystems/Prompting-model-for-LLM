@@ -48,5 +48,7 @@ Please write a Python program that calculates the area of a triangle. The progra
 ### Promt Optimizer
 Имплементированный оптимизатор подсказок, позволяет автоматически генерировать оптимизированные подсказки для LLM (можно выбрать модель из огромного списка): [prompt_optimizer](https://app.hamming.ai/prompt-optimizer). 
 
+Исходный код не доступен. Можно использовать для ручной генерации небольшого датасета.
+
 
 ---
