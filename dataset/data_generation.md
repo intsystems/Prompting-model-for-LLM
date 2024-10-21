@@ -64,7 +64,7 @@ Please write a Python program that calculates the area of a triangle. The progra
 
 Этот алгоритм реализован во фреймворке: [BPO](https://github.com/thu-coai/BPO/tree/main).
 
-Авторы самостоятельно сгенерировали датасет из 14,395 оптимальных промптов на основании своего алгоритма: [ready-made dataset]
+Авторы самостоятельно сгенерировали датасет из 14,395 оптимальных промптов на основании своего алгоритма: [BPOdataset]
 (https://huggingface.co/datasets/THUDM/BPO).
 
 > [!NOTE]
