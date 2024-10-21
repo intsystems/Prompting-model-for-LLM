@@ -71,6 +71,8 @@ Please write a Python program that calculates the area of a triangle. The progra
 | bad_prompt | optimized_prompt |
 | :--- | :--- | 
 | Could you find the equation that gives the following number sequence : 1, 4, 13, 40, 121, 364, etc. | Could you determine the equation that generates the sequence: 1, 4, 13, 40, 121, 364, etc.? |
+| provide a title for a blog article about the difference between branding, rebranding, brand updates and brand refresh | Provide a more engaging and creative title for a blog article that explains the difference between branding, rebranding, brand updates, and brand refresh while maintaining accuracy. |
+| How should I do to produce an ssh tunnel going through multiple hosts in python please ? | How can I create an SSH tunnel through multiple hosts in Python using the Paramiko library? Please provide step-by-step instructions and any additional tips for customization or troubleshooting. |
 
 > [!NOTE]
 > Чтобы воспользоваться фреймворком необходимо иметь OpenAI API key. Но аккаунт на [OpenAI](https://openai.com/index/openai-api/) нельзя зарегистрировать на российский номер телефона.
