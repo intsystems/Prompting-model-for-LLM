@@ -70,6 +70,7 @@ Please write a Python program that calculates the area of a triangle. The progra
 
 | bad_prompt | optimized_prompt |
 | :--- | :--- | 
+| Could you find the equation that gives the following number sequence : 1, 4, 13, 40, 121, 364, etc. | Could you determine the equation that generates the sequence: 1, 4, 13, 40, 121, 364, etc.? |
 
 > [!NOTE]
 > Чтобы воспользоваться фреймворком необходимо иметь OpenAI API key. Но аккаунт на [OpenAI](https://openai.com/index/openai-api/) нельзя зарегистрировать на российский номер телефона.
