@@ -90,7 +90,7 @@ Please write a Python program that calculates the area of a triangle. The progra
 ### Prompt Optimizer Python
 Есть вот такая базовая библиотека Питона: [PromptOptimizer](https://promptoptimizer.readthedocs.io/en/latest/reference.html).
 
-Никаких LLM для создания оптимальных промптов не используется, но много чего реализовано. Например метрики для оценки качества улучшенных промптов.
+Никаких LLM для создания оптимальных промптов не используется, но много чего реализовано. Например, метрики для оценки качества улучшенных промптов.
 
 
 
