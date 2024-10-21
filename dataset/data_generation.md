@@ -45,4 +45,8 @@ Please write a Python program that calculates the area of a triangle. The progra
 | What's hard about space travel? | Describe the challenges of space travel for astronauts. | Challenges of Space Travel: Explain the difficulties and obstacles. | Describe the key challenges astronauts face during space travel. Cover the following aspects: <br>  1. Physical challenges (e.g., effects of microgravity, radiation exposure) <br>  2. Psychological challenges (e.g., isolation, confinement) <br>  3. Technical challenges (e.g., spacecraft maintenance, life support systems) <br>  4. Environmental challenges (e.g., extreme temperatures, space debris) <br> Use clear and concise language to explain these challenges.
 | Write a story about the Gold Rush. | Write a historical fiction story set during the Gold Rush. | Craft a narrative set during the historic Gold Rush era, detailing the challenges, triumphs, and transformations experienced by its participants. | Write a historical fiction story set during the Gold Rush. Focus on a prospector's journey, the challenges they face, and the people they encounter. Include vivid descriptions and authentic details to bring the era to life. |
 
+### Promt Optimizer
+Имплементированный оптимизатор подсказок, позволяет автоматически генерировать оптимизированные подсказки для LLM (можно выбрать модель из огромного списка): [prompt_optimizer](https://app.hamming.ai/prompt-optimizer). 
+
+
 ---
