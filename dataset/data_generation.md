@@ -64,6 +64,9 @@ Please write a Python program that calculates the area of a triangle. The progra
 
 Этот алгоритм реализован во фреймворке: [BPO](https://github.com/thu-coai/BPO/tree/main).
 
+> [!NOTE]
+> Чтобы воспользоваться фреймворком необходимо иметь OpenAI API key. Но аккаунт на [OpenAI](https://openai.com/index/openai-api/) нельзя зарегистрировать на российский номер телефона.
+
 Авторы самостоятельно сгенерировали датасет из 14,395 оптимальных промптов на основании своего алгоритма: [BPOdataset](https://huggingface.co/datasets/THUDM/BPO).
 
 Пимеры генерации:
@@ -74,8 +77,7 @@ Please write a Python program that calculates the area of a triangle. The progra
 | provide a title for a blog article about the difference between branding, rebranding, brand updates and brand refresh | Provide a more engaging and creative title for a blog article that explains the difference between branding, rebranding, brand updates, and brand refresh while maintaining accuracy. |
 | How should I do to produce an ssh tunnel going through multiple hosts in python please ? | How can I create an SSH tunnel through multiple hosts in Python using the Paramiko library? Please provide step-by-step instructions and any additional tips for customization or troubleshooting. |
 
-> [!NOTE]
-> Чтобы воспользоваться фреймворком необходимо иметь OpenAI API key. Но аккаунт на [OpenAI](https://openai.com/index/openai-api/) нельзя зарегистрировать на российский номер телефона.
+
 
 
 
