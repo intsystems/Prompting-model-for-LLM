@@ -66,8 +66,15 @@ Please write a Python program that calculates the area of a triangle. The progra
 
 Авторы самостоятельно сгенерировали датасет из 14,395 оптимальных промптов на основании своего алгоритма: [BPOdataset](https://huggingface.co/datasets/THUDM/BPO).
 
+Пимеры генеации:
+
+| bad_prompt | optimized_prompt |
+| :--- | :--- | 
+
 > [!NOTE]
 > Чтобы воспользоваться фреймворком необходимо иметь OpenAI API key. Но аккаунт на [OpenAI](https://openai.com/index/openai-api/) нельзя зарегистрировать на российский номер телефона.
+
+
 
 
 
