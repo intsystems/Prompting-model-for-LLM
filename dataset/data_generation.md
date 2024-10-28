@@ -25,7 +25,7 @@ Here we have collected our experiments with dataset generation.
 
 [Github](https://github.com/QwenLM/Qwen2.5).
 
-Вышла версия 2.5, но для генерации я использовала Qwen2-7B-Instruct, так как иначе слишком тяжёлая и медленная модель [скорость и память](https://qwen.readthedocs.io/en/latest/benchmark/speed_benchmark.html). Код генерации датасета: [Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1N2BHexEWPXcUW8PXxCHgQVv4UjxCrJ59?usp=sharing) Примеры генерации занесены в таблицу.
+Вышла версия 2.5, но для генерации я использовала Qwen2-7B-Instruct, так как иначе слишком тяжёлая и медленная модель [скорость и память](https://qwen.readthedocs.io/en/latest/benchmark/speed_benchmark.html). Код генерации датасета: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1N2BHexEWPXcUW8PXxCHgQVv4UjxCrJ59?usp=sharing) Примеры генерации занесены в таблицу.
 
 Плюсы: можно ручками ограничить число выходных токенов, поэтому ответ на удивление вполне осмысленный и сокращённый.
 
